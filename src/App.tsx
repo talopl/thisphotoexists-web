@@ -9,13 +9,13 @@ import SignUp from "./pages/SignUp/SignUp";
 function App() {
   return (
     <AuthProvider>
-      <Route>
+      <Router>
         <Switch>
           <PrivateRoute path="/" component={Home} />
           <Route path="/login" component={Login} />
           <Route path="/signup" component={SignUp} />
         </Switch>
-      </Route>
+      </Router>
     </AuthProvider>
   );
 }
