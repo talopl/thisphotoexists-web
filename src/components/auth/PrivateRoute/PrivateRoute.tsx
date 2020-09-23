@@ -10,3 +10,5 @@ const PrivateRoute = ({ component, ...rest }: any) => {
 
   return <Route {...rest} render={RouteComponent} />;
 };
+
+export default PrivateRoute;
